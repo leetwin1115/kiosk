@@ -33,7 +33,6 @@ public class Kiosk {
         }
         scanner.close();
     }
-
     private void displayMainMenu() {
         System.out.println("\n[ MAIN MENU ]");
         for (int i = 0; i < mainMenus.size(); i++) {
@@ -42,7 +41,6 @@ public class Kiosk {
         System.out.println("0. 종료      | 프로그램 종료");
         System.out.print("\n카테고리를 선택해주세요: ");
     }
-
     private void displayProductMenu(Menu menu) {
         System.out.printf("\n[ %S MENU ]\n", menu.getCategoryName());
         List<MenuItem> items = menu.getMenuItems();
