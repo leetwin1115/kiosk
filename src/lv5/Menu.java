@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
+    //속
     private String categoryName;
     private List<MenuItem> menuItems = new ArrayList<>();
 
+    //생
     public Menu(String categoryName) {
         this.categoryName = categoryName;
     }
-
-    // 메뉴에 아이템 추가 (Setter 역할)
+    //기
     public void addMenuItem(MenuItem item) {
         this.menuItems.add(item);
     }
 
-    // Getters
     public String getCategoryName() {
         return this.categoryName;
     }

@@ -3,7 +3,6 @@ package lv5;
 import java.util.ArrayList;
 import java.util.List;
 
-// Lv4와 코드는 동일하지만, 사용하는 클래스들이 캡슐화된 lv5의 클래스들임
 public class Main {
     public static void main(String[] args) {
         Menu burgerMenu = new Menu("Burgers");
