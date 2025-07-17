@@ -4,12 +4,12 @@ public class MenuItem {
     //속
     private String name;
     private double price;
-    private String description;
+    private String exp;
     //생
-    public MenuItem(String name, double price, String description) {
+    public MenuItem(String name, double price, String exp) {
         this.name = name;
         this.price = price;
-        this.description = description;
+        this.exp = exp;
     }
 
     //기
@@ -22,6 +22,6 @@ public class MenuItem {
     }
 
     public String getDescription() {
-        return description;
+        return exp;
     }
 }

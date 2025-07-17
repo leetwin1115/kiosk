@@ -15,15 +15,15 @@ public class Kiosk {
     public void start() {
         while (true) {
             displayMainMenu();
-            int categoryChoice = scanner.nextInt();
+            int categoryCommend = scanner.nextInt();
 
-            if (categoryChoice == 0) {
+            if (categoryCommend == 0) {
                 System.out.println("프로그램을 종료합니다.");
                 break;
             }
 
-            if (categoryChoice > 0 && categoryChoice <= mainMenus.size()) {
-                Menu selectedMenu = mainMenus.get(categoryChoice - 1);
+            if (categoryCommend > 0 && categoryCommend <= mainMenus.size()) {
+                Menu selectedMenu = mainMenus.get(categoryCommend - 1);
                 displayProductMenu(selectedMenu);
             } else {
                 System.out.println("잘못된 번호입니다. 다시 입력해주세요.");
@@ -51,9 +51,9 @@ public class Kiosk {
         System.out.println("0. 뒤로가기");
         System.out.print("\n상품을 선택해주세요: ");
 
-        int productChoice = scanner.nextInt();
-        if (productChoice > 0 && productChoice <= items.size()) {
-            MenuItem selectedItem = items.get(productChoice - 1);
+        int productCommend = scanner.nextInt();
+        if (productCommend > 0 && productCommend <= items.size()) {
+            MenuItem selectedItem = items.get(productCommend - 1);
             System.out.printf("선택한 메뉴: %s | W %.1f | %s\n", selectedItem.getName(), selectedItem.getPrice(), selectedItem.getDescription());
         }
     }
