@@ -23,7 +23,6 @@ public class Kiosk {
                 System.out.println("프로그램을 종료합니다.");
                 break;
             }
-
             if (categoryChoice > 0 && categoryChoice <= mainMenus.size()) {
                 Menu selectedMenu = mainMenus.get(categoryChoice - 1);
                 displayProductMenu(selectedMenu);

@@ -47,7 +47,7 @@ public class Kiosk {
         List<MenuItem> items = menu.getMenuItems();
         for (int i = 0; i < items.size(); i++) {
             MenuItem item = items.get(i);
-            System.out.printf("%d. %-15s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getDescription());
+            System.out.printf("%d. %-15s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getExp());
         }
         System.out.println("0. 뒤로가기");
         System.out.print("\n상품을 선택해주세요: ");
@@ -55,7 +55,7 @@ public class Kiosk {
         int productCommend = scanner.nextInt();
         if (productCommend > 0 && productCommend <= items.size()) {
             MenuItem selectedItem = items.get(productCommend - 1);
-            System.out.printf("선택한 메뉴: %s | W %.1f | %s\n", selectedItem.getName(), selectedItem.getPrice(), selectedItem.getDescription());
+            System.out.printf("선택한 메뉴: %s | W %.1f | %s\n", selectedItem.getName(), selectedItem.getPrice(), selectedItem.getExp());
         }
     }
 }

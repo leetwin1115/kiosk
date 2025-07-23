@@ -1,4 +1,4 @@
-package lv5;
+package lv6;
 
 public class MenuItem {
     //속
